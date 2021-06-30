@@ -1,0 +1,163 @@
+body{
+    background-color: #CCDBDC;
+    color: #000;
+}
+
+#title{
+    padding-top: 50px;
+    text-align: center;
+}
+
+nav{
+    --search-width: 200px;
+    --submit-width: 75px;
+    --search-height: 20px;
+    --submit-height: 20px;
+    background-color: #7189FF;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+nav ul{
+    display: inline;
+    padding: 0px;
+}
+
+nav li{
+    display: inline;
+    padding: 0 5px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #222;
+    font-size: 23px;
+    color: rgb(255, 255, 200);
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav form{
+    position: absolute;
+    /*center form*/
+    left: calc(75% - calc(calc(var(--search-width) + var(--submit-width)) / 2));
+    bottom: calc(50% - calc(max(var(--search-height), var(--submit-height)) / 2));
+}
+
+nav form input{
+    color: #eee;
+    background-color: #344055;
+    border: #161b23 1px solid;
+    border-radius: 10px;
+    outline: none;
+}
+
+nav form input[type=search]{
+    width: var(--search-width);
+    height: var(--search-height);
+    text-align: center;
+}
+
+nav form ::placeholder{
+    color: #eee;
+}
+
+nav form input[type=submit]{
+    width: var(--submit-width);
+    height: var(--submit-height);
+}
+
+#results{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 20px 10px;
+    justify-content: center;
+}
+
+.item{
+    color: #fff;
+    border: #344055 3px solid;
+    border-radius: 3%;
+    width: 200px;
+    height: 300px;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #7189FF;
+    text-decoration: none;
+}
+
+.item:hover{
+    animation-name: expand;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes expand{
+    50%{
+        transform: scale(1.05);
+    }
+
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+.item img{
+    width: 200px;
+}
+
+.item:hover{
+    border: #E9AA0C 3px solid;
+}
+
+footer{
+    color: #eee;
+    background-color: #344055;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+footer ul li a img{
+    width: 20px;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+@media (max-width: 800px) {
+    nav a, nav input{
+        font-size: 0.75em;
+    }
+    
+    #results{
+        grid-template-columns: repeat(auto-fit, 300px);
+    }
+
+    nav form{
+        position: unset;
+        display: block;
+    }
+
+    nav form input{
+        display: block;
+        margin: 0 auto;
+    }
+
+    @keyframes expand{
+        100%{
+            transform: scale(1);
+        }
+    }
+
+    #title{
+        padding-top: 100px;
+    }
+}

@@ -1,138 +1,27 @@
 <!DOCTYPE html>
 
-<style>
-    body{
-        background-color: #CCDBDC;
-        color: #000;
-    }
-
-    #title{
-        padding-top: 50px;
-        text-align: center;
-    }
-
-    h2{
-        text-align: center;
-    }
-
-    a{
-        text-decoration: none;
-        color: #222;
-    }
-
-    nav{
-        background-color: #7189FF;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        color: rgb(30, 30, 30);
-        padding: 3px;
-        z-index: 2;
-    }
-    
-    nav ul{
-        display: inline;
-        padding: 0px;
-    }
-
-    nav li{
-        display: inline;
-        padding: 10px;
-    }
-
-    nav form{
-        display: inline;
-        padding: 50px;
-    }
-
-    nav a{
-        font-size: 23px;
-        color: rgb(255, 255, 200);
-    }
-
-    nav a:hover{
-        text-decoration: underline;
-    }
-
-    #results{
-        display: grid;
-        grid: 1fr/1fr 1fr 1fr;
-    }
-
-    .item{
-        color: #fff;
-        border: #344055 3px solid;
-        border-radius: 3%;
-        width: 200px;
-        height: 300px;
-        margin: 5px;
-        padding: 10px 20px;
-        background-color: #7189FF;
-    }
-
-    .item:hover{
-        animation-name: expand;
-        animation-duration: 0.2s;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes expand {
-        50%{
-            transform: scale(1.05);
-        }
-
-        100%{
-            transform: scale(1.1);
-        }
-    }
-
-    .item img{
-        width: 200px;
-    }
-
-    .item:hover{
-        border: #E9AA0C 3px solid;
-    }
-
-    footer{
-        color: #eee;
-        background-color: #344055;
-    }
-
-    #facebook{
-        width: 25px;
-    }
-
-    footer li{
-        display: inline;
-        margin: 0 3px;
-    }
-</style>
-
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>Compra</title>
+        <title>CompPC</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">site</a></li>
-                    <li><a href="#">site</a></li>
-                    <li><a href="#">site</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Carrito</a></li>
+                    <li><a href="#">Acerca de</a></li>
                 </ul>
                 <form id="search-bar">
-                    <input type="search" id="search" name="search" placeholder="Search">
-                    <input type="submit" name="submit" value="Submit">
+                    <input type="search" id="search" name="search" placeholder="Buscar">
+                    <input type="submit" name="submit" value="Aceptar">
                 </form>
             </nav>
-            <h1 id="title">página</h1>
-            <h2>subtitulo</h2>
+            <h1 id="title">CompPC</h1>
         </header>
-
         <main>
             <div id="results">
                 <a class="item" href="#">
@@ -144,75 +33,35 @@
                     <p>La descripción de la cosa</p>
                     <img src="imagen de prueba.png" alt="">
                 </a>
-                <a href="#">
-                    <div class="item">
-                        <h3>Cosa</h3>
-                        <p>La descripción de la cosa</p>
-                        <img src="otra imagen de pureba.png" alt="">
-                    </div>
+                <a href="#" class="item">
+                    <h3>Cosa</h3>
+                    <p>La descripción de la cosa</p>
+                    <img src="otra imagen de pureba.png" alt="">
                 </a>
-                <a href="#">
-                    <div class="item">
-                        <h3>Cosa</h3>
-                        <p>La descripción de la cosa</p>
-                    </div>
+                <a class="item" href="#">
+                    <h3>Cosa</h3>
+                    <p>La descripción de la cosa</p>
                 </a>
-                <a href="#">
-                    <div class="item">
-                        <h3>Cosa</h3>
-                        <p>La descripción de la cosa</p>
-                    </div>
+                <a class="item" href="#">
+                    <h3>Cosa</h3>
+                    <p>La descripción de la cosa</p>
                 </a>
-                <a href="#">
-                    <div class="item">
-                        <h3>Cosa</h3>
-                        <p>La descripción de la cosa</p>
-                    </div>
+                <a class="item" href="#">
+                    <h3>Cosa</h3>
+                    <p>La descripción de la cosa</p>
                 </a>
-                <a href="#">
-                    <div class="item">
-                        <h3>Cosa</h3>
-                        <p>La descripción de la cosa</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="item">
-                        <h3>Cosa</h3>
-                        <p>La descripción de la cosa</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="item">
-                        <h3>Cosa</h3>
-                        <p>La descripción de la cosa</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="item">
-                        <h3>Cosa</h3>
-                        <p>La descripción de la cosa</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="item">
-                        <h3>Cosa</h3>
-                        <p>La descripción de la cosa</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="item">
-                        <h3>Cosa</h3>
-                        <p>La descripción de la cosa</p>
-                    </div>
+                <a class="item" href="#">
+                    <h3>Cosa</h3>
+                    <p>La descripción de la cosa</p>
                 </a>
             </div>
         </main>
         <footer>
-            <h1>Page</h1>
+            <h1>Contacto</h1>
             <ul>
-                <li><a href="#"><img id="facebook" src="facebook.png" alt="facebook"></a></li>
-                <li><a href="#"><img id="facebook" src="instagram.png" alt="facebook"></a></li>
-                <li><a href="#"><img id="facebook" src="whatsapp.png" alt="facebook"></a></li>
+                <li><a href="#"><img id="facebook" src="facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img id="instagram" src="instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img id="whatsapp" src="whatsapp.png" alt="Whatsapp"></a></li>
             </ul>
         </footer>
     </body>
