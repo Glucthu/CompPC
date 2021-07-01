@@ -8,22 +8,22 @@
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Tienda</a></li>
-                    <li><a href="#">Carrito</a></li>
-                    <li><a href="#">Acerca de</a></li>
+            <nav id="nav-bar">
+                <ul id="nav-buttons">
+                    <li><a id="logo" href="index.html"><img src="Logo.png" alt="Home"></a></li>
+                    <li><a id="shops" href="#"><img src="pin.png" alt="Tiendas"></a></li>
+                    <li><a id="cart" href="#"><img src="shopping-cart.png" alt="Carrito"></a></li>
+                    <li><a id="about" href="#"><img src="help-button.png" alt="Acerca de"></a></li>
                 </ul>
                 <form id="search-bar">
                     <input type="search" id="search" name="search" placeholder="Buscar">
                     <input type="submit" name="submit" value="Aceptar">
                 </form>
             </nav>
-            <h1 id="title">CompPC</h1>
         </header>
         <main>
-            <div id="results">
+            <h1 id="title">CompPC</h1>
+            <div id="products">
                 <a class="item" href="#">
                         <h3>Cosa</h3>
                         <p>La descripción de la cosa</p>
@@ -31,12 +31,12 @@
                 <a class="item" href="#">
                     <h3>Cosa</h3>
                     <p>La descripción de la cosa</p>
-                    <img src="imagen de prueba.png" alt="">
+                    <img src="Products/imagen de prueba.png" alt="">
                 </a>
                 <a href="#" class="item">
                     <h3>Cosa</h3>
                     <p>La descripción de la cosa</p>
-                    <img src="otra imagen de pureba.png" alt="">
+                    <img src="Products/otra imagen de pureba.png" alt="">
                 </a>
                 <a class="item" href="#">
                     <h3>Cosa</h3>
@@ -58,7 +58,7 @@
         </main>
         <footer>
             <h1>Contacto</h1>
-            <ul>
+            <ul id="contact-list">
                 <li><a href="#"><img id="facebook" src="facebook.png" alt="Facebook"></a></li>
                 <li><a href="#"><img id="instagram" src="instagram.png" alt="Instagram"></a></li>
                 <li><a href="#"><img id="whatsapp" src="whatsapp.png" alt="Whatsapp"></a></li>

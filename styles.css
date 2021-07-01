@@ -1,14 +1,18 @@
 body{
     background-color: #CCDBDC;
-    color: #000;
+    color: #111;
+    position: absolute;
+    min-height: 100vh;
+    margin: 0;
+    top: 0;
+    width: 100%;
 }
 
 #title{
-    padding-top: 50px;
     text-align: center;
 }
 
-nav{
+#nav-bar{
     --search-width: 200px;
     --submit-width: 75px;
     --search-height: 20px;
@@ -21,69 +25,116 @@ nav{
     z-index: 2;
 }
 
-nav ul{
+#nav-buttons{
     display: inline;
     padding: 0px;
 }
 
-nav li{
+#nav-buttons li{
     display: inline;
     padding: 0 5px;
 }
 
-nav a{
+#nav-buttons li a{
     text-decoration: none;
     color: #222;
     font-size: 23px;
     color: rgb(255, 255, 200);
 }
 
-nav a:hover{
+#nav-buttons li a:hover{
     text-decoration: underline;
 }
 
-nav form{
+#shops img, #cart img, #about img{
+    width: 30px;
+    padding-top: 3px    ;
+}
+
+#logo img{
+    width: 150px;
+}
+
+#search-bar{
     position: absolute;
     /*center form*/
     left: calc(75% - calc(calc(var(--search-width) + var(--submit-width)) / 2));
     bottom: calc(50% - calc(max(var(--search-height), var(--submit-height)) / 2));
 }
 
-nav form input{
+#search-bar input{
     color: #eee;
     background-color: #344055;
     border: #161b23 1px solid;
-    border-radius: 10px;
     outline: none;
+    animation-name: unround-border;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
 }
 
-nav form input[type=search]{
+
+#search-bar input[type=search]{
     width: var(--search-width);
     height: var(--search-height);
     text-align: center;
 }
 
-nav form ::placeholder{
+#search-bar ::placeholder{
     color: #eee;
 }
 
-nav form input[type=submit]{
+#search-bar input[type=submit]{
     width: var(--submit-width);
     height: var(--submit-height);
 }
 
-#results{
+#search-bar input:hover{
+    animation-name: round-border;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes round-border{
+    50%{
+        border-radius: 5px;
+    }
+
+    100%{
+        border-radius: 10px;
+    }
+}
+
+@keyframes unround-border{
+    0%{
+        border-radius: 10px;
+    }
+
+    50%{
+        border-radius: 5px;
+    }
+
+    100%{
+        border-radius: 0px;
+    }
+}
+
+main{
+    margin: 50px 0 200px 0;
+}
+
+#products{
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 200px);
     grid-gap: 20px 10px;
     justify-content: center;
+    justify-items: center;
 }
 
 .item{
     color: #fff;
     border: #344055 3px solid;
     border-radius: 3%;
-    width: 200px;
+    width: 75%;
     height: 300px;
     margin: 5px;
     padding: 10px 20px;
@@ -95,6 +146,7 @@ nav form input[type=submit]{
     animation-name: expand;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
+    border: #E9AA0C 3px solid;
 }
 
 @keyframes expand{
@@ -108,11 +160,7 @@ nav form input[type=submit]{
 }
 
 .item img{
-    width: 200px;
-}
-
-.item:hover{
-    border: #E9AA0C 3px solid;
+    width: 100%;
 }
 
 footer{
@@ -120,35 +168,36 @@ footer{
     background-color: #344055;
     position: absolute;
     left: 0;
+    bottom: 0;
     width: 100%;
     z-index: 3;
 }
 
-footer ul li a img{
-    width: 20px;
-}
-
-footer li{
+#contact-list li{
     list-style-type: none;
 }
 
+#facebook, #instagram, #whatsapp{
+    width: 20px;
+}
+
 @media (max-width: 800px) {
-    nav a, nav input{
+    #nav-bar{
+        position: absolute;
+        top: 0;
+    }
+    #nav-buttons li a, #search-bar input{
         font-size: 0.75em;
     }
-    
-    #results{
-        grid-template-columns: repeat(auto-fit, 300px);
-    }
 
-    nav form{
+    #search-bar{
         position: unset;
         display: block;
     }
 
-    nav form input{
+    #search-bar input{
         display: block;
-        margin: 0 auto;
+        margin: 2px auto;
     }
 
     @keyframes expand{
@@ -157,7 +206,23 @@ footer li{
         }
     }
 
-    #title{
-        padding-top: 100px;
+    main{
+        margin-top: 150px;
+    }
+
+    #products{
+        grid-template-columns: repeat(auto-fit, 200px);
+    }
+
+    .item{
+        height: 250px;
+    }
+
+    .item h3{
+        font-size: 0.9em;
+    }
+
+    .item p{
+        font-size: 0.75em;
     }
 }
