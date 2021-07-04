@@ -218,6 +218,10 @@ footer{
     max-height: 50px;
 }
 
+#contact-form ::placeholder{
+    color: var(--col7);
+}
+
 @media (max-width: 800px) {
     #nav-bar{
         position: absolute;
@@ -266,6 +270,7 @@ footer{
 
     .item{
         height: 250px;
+        
     }
 
     .item h3{
