@@ -1,6 +1,18 @@
+:root{
+    --col1: #181618;
+    --col2: #1f2224;
+    --col3: #660708;
+    --col4: #A4161A;
+    --col5: #BA181B;
+    --col6: #E5383B;
+    --col7: #B1A7A6;
+    --col8: #D3D3D3;
+    --col9: #F5F3F4;
+}
+
 body{
-    background-color: #CCDBDC;
-    color: #111;
+    background-color: var(--col1);
+    color: var(--col9);
     position: absolute;
     min-height: 100vh;
     margin: 0;
@@ -13,33 +25,42 @@ body{
 }
 
 #nav-bar{
-    --search-width: 200px;
-    --submit-width: 75px;
-    --search-height: 20px;
-    --submit-height: 20px;
-    background-color: #7189FF;
+    --search-width: 30vw;
+    --submit-width: 10vw;
+    --search-height: 3vh;
+    --submit-height: 3vh;
+    background-color: var(--col4);
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     z-index: 2;
+    border-bottom: var(--col2) 3px solid;
 }
 
 #nav-buttons{
-    display: inline;
-    padding: 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 33%;
+    height: 100%;
 }
 
 #nav-buttons li{
-    display: inline;
-    padding: 0 5px;
+    list-style-type: none;
 }
 
 #nav-buttons li a{
     text-decoration: none;
-    color: #222;
-    font-size: 23px;
-    color: rgb(255, 255, 200);
+    font-size: 1.25em;
+    color: var(--col9);
 }
 
 #nav-buttons li a:hover{
@@ -47,79 +68,77 @@ body{
 }
 
 #shops img, #cart img, #about img{
-    width: 30px;
-    padding-top: 3px    ;
+    height: 1vh;
+    min-height: 20px;
+    margin: 0;
 }
 
 #logo img{
-    width: 150px;
+    height: 5vh;
+    max-height: 100px;
+    min-height: 40px;
+    margin: 0;
 }
 
 #search-bar{
     position: absolute;
     /*center form*/
-    left: calc(75% - calc(calc(var(--search-width) + var(--submit-width)) / 2));
+    left: calc(45% - calc(calc(var(--search-width) + var(--submit-width)) / 2));
     bottom: calc(50% - calc(max(var(--search-height), var(--submit-height)) / 2));
 }
 
 #search-bar input{
-    color: #eee;
-    background-color: #344055;
-    border: #161b23 1px solid;
+    color: var(--col9);
+    background-color: var(--col2);
+    border: var(--col1) 2px solid;
     outline: none;
-    animation-name: unround-border;
-    animation-duration: 0.2s;
-    animation-fill-mode: forwards;
+    min-height: 20px;
+    max-height: 50px;
 }
 
-
-#search-bar input[type=search]{
+#search{
     width: var(--search-width);
     height: var(--search-height);
+    min-width: 90px;
+    max-width: 500px;
     text-align: center;
 }
 
 #search-bar ::placeholder{
-    color: #eee;
+    color: var(--col9);
 }
 
 #search-bar input[type=submit]{
     width: var(--submit-width);
     height: var(--submit-height);
-}
-
-#search-bar input:hover{
-    animation-name: round-border;
-    animation-duration: 0.2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes round-border{
-    50%{
-        border-radius: 5px;
-    }
-
-    100%{
-        border-radius: 10px;
-    }
-}
-
-@keyframes unround-border{
-    0%{
-        border-radius: 10px;
-    }
-
-    50%{
-        border-radius: 5px;
-    }
-
-    100%{
-        border-radius: 0px;
-    }
+    min-width: 75px;
+    max-width: 200px;
 }
 
 main{
-    margin: 50px 0 200px 0;
+    margin: 50px 0 275px 0;
+}
+
+#featured{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+    height: 200px;
+    background-color: var(--col6);
+}
+
+.featured-item{
+    color: var(--col1);
+    border: var(--col7) 3px solid;
+    border-radius: 3%;
+    width: 150px;
+    height: 80%;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: var(--col9);
+    text-decoration: none;
 }
 
 #products{
@@ -131,14 +150,14 @@ main{
 }
 
 .item{
-    color: #fff;
-    border: #344055 3px solid;
+    color: var(--col1);
+    border: var(--col9) 3px solid;
     border-radius: 3%;
     width: 75%;
     height: 300px;
     margin: 5px;
     padding: 10px 20px;
-    background-color: #7189FF;
+    background-color: var(--col7);
     text-decoration: none;
 }
 
@@ -146,7 +165,7 @@ main{
     animation-name: expand;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
-    border: #E9AA0C 3px solid;
+    border: var(--col3) 3px solid;
 }
 
 @keyframes expand{
@@ -164,8 +183,8 @@ main{
 }
 
 footer{
-    color: #eee;
-    background-color: #344055;
+    color: var(--col9);
+    background-color: var(--col2);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -177,8 +196,26 @@ footer{
     list-style-type: none;
 }
 
+#contact-list li a{
+    color: var(--col6);
+    text-decoration: none;
+}
+
 #facebook, #instagram, #whatsapp{
     width: 20px;
+}
+
+#contact-form{
+    margin: 0 0 20px 5px;
+}
+
+#contact-form input{
+    color: var(--col9);
+    background-color: var(--col5);
+    border: var(--col8) 2px solid;
+    outline: none;
+    min-height: 20px;
+    max-height: 50px;
 }
 
 @media (max-width: 800px) {
@@ -186,8 +223,21 @@ footer{
         position: absolute;
         top: 0;
     }
+
     #nav-buttons li a, #search-bar input{
-        font-size: 0.75em;
+        font-size: 0.9em;
+    }
+
+    #logo{
+        position: relative;
+        display:-webkit-box;
+        -webkit-box-align:center;
+        -webkit-box-pack:center;
+    }
+    
+    #nav-buttons{
+        position: relative;
+        width: 100%;
     }
 
     #search-bar{
@@ -224,5 +274,11 @@ footer{
 
     .item p{
         font-size: 0.75em;
+    }
+}
+
+@media (min-width: 2200px) {
+    main{
+        margin-top: 120px;
     }
 }

@@ -18,11 +18,11 @@
     <body>
         <header>
             <nav id="nav-bar">
+                <a id="logo" href="index.html"><img src="Logo.png"></a>
                 <ul id="nav-buttons">
-                    <li><a id="logo" href="index.html"><img src="Logo.png" alt="Home"></a></li>
-                    <li><a id="shops" href="#"><img src="pin.png" alt="Tiendas"></a></li>
-                    <li><a id="cart" href="#"><img src="shopping-cart.png" alt="Carrito"></a></li>
-                    <li><a id="about" href="#"><img src="help-button.png" alt="Acerca de"></a></li>
+                    <li><a id="shops" href="#"><img src="Nav buttons/pin.png">Tiendas</a></li>
+                    <li><a id="cart" href="#"><img src="Nav buttons/shopping-cart.png">Carrito</a></li>
+                    <li><a id="about" href="#"><img src="Nav buttons/help-button.png">Acerca de</a></li>
                 </ul>
                 <form id="search-bar">
                     <input type="search" id="search" name="search" placeholder="Buscar">
@@ -32,6 +32,28 @@
         </header>
         <main>
             <h1 id="title">CompPC</h1>
+            <div id="featured">
+                <a class="featured-item" href="#">
+                    <h3>Cosa</h3>
+                    <p>La descripción de la cosa</p>
+                </a>
+                <a class="featured-item" href="#">
+                    <h3>Cosa</h3>
+                    <p>La descripción de la cosa</p>
+                </a>
+                <a class="featured-item" href="#">
+                    <h3>Cosa</h3>
+                    <p>La descripción de la cosa</p>
+                </a>
+                <a class="featured-item" href="#">
+                    <h3>Cosa</h3>
+                    <p>La descripción de la cosa</p>
+                </a>
+                <a class="featured-item" href="#">
+                    <h3>Cosa</h3>
+                    <p>La descripción de la cosa</p>
+                </a>
+            </div>
             <div id="products">
                 <a class="item" href="#">
                         <h3>Cosa</h3>
@@ -68,10 +90,14 @@
         <footer>
             <h1>Contacto</h1>
             <ul id="contact-list">
-                <li><a href="#"><img id="facebook" src="facebook.png" alt="Facebook"></a></li>
-                <li><a href="#"><img id="instagram" src="instagram.png" alt="Instagram"></a></li>
-                <li><a href="#"><img id="whatsapp" src="whatsapp.png" alt="Whatsapp"></a></li>
+                <li><a href="#"><img id="facebook" src="Contact/facebook.png" alt="Facebook"> Página de Facebook</a></li>
+                <li><a href="#"><img id="instagram" src="Contact/instagram.png" alt="Instagram"> Perfil de Instagram</a></li>
+                <li><a href="#"><img id="whatsapp" src="Contact/whatsapp.png" alt="Whatsapp"> +54 11 9 9999-9999</a></li>
             </ul>
+            <form id="contact-form">
+                <input type="search" name="search" placeholder="Email">
+                <input type="submit" name="submit" value="Registrarse">
+            </form>
         </footer>
     </body>
 </html>
