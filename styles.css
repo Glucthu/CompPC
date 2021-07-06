@@ -119,7 +119,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 150px 0;
+    margin: 75px 0;
     width: 100vw;
     height: 200px;
     background-color: var(--col6);
