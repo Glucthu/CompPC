@@ -147,13 +147,15 @@ main{
 }
 
 .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: var(--col1);
     border: var(--col9) 3px solid;
-    border-radius: 3%;
+    border-radius: 5px;
     width: 75%;
-    height: 300px;
+    height: 250px;
     margin: 5px;
-    padding: 10px 20px;
     background-color: var(--col7);
     text-decoration: none;
 }
@@ -162,7 +164,37 @@ main{
     animation-name: expand;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
-    border: var(--col3) 3px solid;
+    border: var(--col6) 3px solid;
+}
+
+.item-title{
+    margin: 0;
+    text-align: center;
+}
+
+.item header{
+    background-color: var(--col2);
+    color: var(--col8);
+    border-radius: 2px 2px 0 0;
+    padding: 2px;
+    flex-grow: 1;
+}
+
+.item article{
+    margin: 10px 10px 0 10px;
+    flex-grow: 2;
+}
+
+.item footer{
+    background-color: var(--col1);
+    color: var(--col7);
+    border-radius: 0 0 2px 2px;
+}
+
+.item footer p{
+    font-size: 1.25em;
+    text-align: center;
+    margin: 0;
 }
 
 @keyframes expand{
@@ -176,10 +208,13 @@ main{
 }
 
 .item img{
+    position: relative;
     width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-footer{
+#page-footer{
     color: var(--col9);
     background-color: var(--col2);
     position: absolute;
@@ -263,11 +298,6 @@ footer{
 
     #products{
         grid-template-columns: repeat(auto-fit, 200px);
-    }
-
-    .item{
-        height: 250px;
-        
     }
 
     .item h3{
