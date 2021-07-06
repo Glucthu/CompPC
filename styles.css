@@ -33,7 +33,7 @@ body{
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
     border-bottom: var(--col2) 3px solid;
 }
@@ -124,9 +124,10 @@ main{
     align-items: center;
     justify-content: center;
     margin: 20px 0;
-    width: 100%;
+    width: 100vw;
     height: 200px;
     background-color: var(--col6);
+    overflow: hidden;
 }
 
 .featured-item{
@@ -188,7 +189,7 @@ footer{
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 3;
 }
 
