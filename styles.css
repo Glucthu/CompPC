@@ -20,10 +20,6 @@ body{
     width: 100%;
 }
 
-#title{
-    text-align: center;
-}
-
 #nav-bar{
     --search-width: 30vw;
     --submit-width: 10vw;
@@ -123,11 +119,11 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    margin: 150px 0;
     width: 100vw;
     height: 200px;
     background-color: var(--col6);
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .featured-item{
