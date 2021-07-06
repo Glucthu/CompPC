@@ -141,7 +141,7 @@ main{
 #products{
     display: grid;
     grid-template-columns: repeat(3, 200px);
-    grid-gap: 20px 10px;
+    grid-row-gap: 10px;
     justify-content: center;
     justify-items: center;
 }
@@ -153,7 +153,7 @@ main{
     color: var(--col1);
     border: var(--col9) 3px solid;
     border-radius: 5px;
-    width: 75%;
+    width: 90%;
     height: 250px;
     margin: 5px;
     background-color: var(--col7);
@@ -177,12 +177,10 @@ main{
     color: var(--col8);
     border-radius: 2px 2px 0 0;
     padding: 2px;
-    flex-grow: 1;
 }
 
 .item article{
     margin: 10px 10px 0 10px;
-    flex-grow: 2;
 }
 
 .item footer{
