@@ -124,7 +124,6 @@ main{
 #featured{
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 95vw;
     height: 200px;
     background-color: var(--col6);
