@@ -20,16 +20,16 @@
     <body>
         <header>
             <nav id="nav-bar">
-                <a id="logo" href="index.html"><img src="Logo.png"></a>
-                <ul id="nav-buttons">
-                    <li><a id="shops" href="shops.html"><img src="Nav buttons/pin.png">Tiendas</a></li>
-                    <li><a id="cart" href="cart.html"><img src="Nav buttons/shopping-cart.png">Carrito</a></li>
-                    <li><a id="about" href="about.html"><img src="Nav buttons/help-button.png">Acerca de</a></li>
-                </ul>
+                <a id="logo" href="index.html"><img src="src/Logo.png"></a>
                 <form id="search-bar">
                     <input type="search" id="search" name="search" placeholder="Buscar">
                     <input type="submit" name="search" value="Aceptar">
                 </form>
+                <ul id="nav-buttons">
+                    <li><a id="shops" href="shops.html"><img src="src/Nav buttons/pin.png">Tiendas</a></li>
+                    <li><a id="cart" href="cart.html"><img src="src/Nav buttons/shopping-cart.png">Carrito</a></li>
+                    <li><a id="about" href="about.html"><img src="src/Nav buttons/help-button.png">Acerca de</a></li>
+                </ul>
             </nav>
         </header>
         <main>
@@ -61,7 +61,7 @@
                         <h3 class="item-title">Asus prime Z490-A</h3>
                     </header>
                     <article>
-                        <img src="Products/Asus prime Z490-A.png" alt="Asus prime Z490-A">
+                        <img src="src/Products/Asus prime Z490-A.png" alt="Asus prime Z490-A">
                     </article>
                     <footer>
                         <p class="item-price">$1000</p>
@@ -72,7 +72,7 @@
                         <h3 class="item-title">Nvidia 1080ti</h3>
                     </header>
                     <article>
-                        <img src="Products/Nvidia 1080ti.png" alt="Nvidia 1080ti">
+                        <img src="src/Products/Nvidia 1080ti.png" alt="Nvidia 1080ti">
                     </article>
                     <footer>
                         <p class="item-price">$1000</p>
@@ -83,7 +83,7 @@
                         <h3 class="item-title">Xigmatek Nyx</h3>
                     </header>
                     <article>
-                        <img src="Products/Xigmatek Nyx.png" alt="Xigmatek Nyx">
+                        <img src="src/Products/Xigmatek Nyx.png" alt="Xigmatek Nyx">
                     </article>
                     <footer>
                         <p class="item-price">$1000</p>
@@ -94,20 +94,27 @@
                         <h3 class="item-title">Nvidia RTX 3070</h3>
                     </header>
                     <article>
-                        <img src="Products/Nvidia RTX 3070.png" alt="Nvidia RTX 3070">
+                        <img src="src/Products/Nvidia RTX 3070.png" alt="Nvidia RTX 3070">
                     </article>
                     <footer>
                         <p class="item-price">$1000</p>
                     </footer>
                 </a>
             </div>
+            <ul id="pagination">
+                <li><a href="#"><div><-</div></a></li>
+                <li><a href="#"><div>1</div></a></li>
+                <li><a href="#"><div>2</div></a></li>
+                <li><a href="#"><div>3</div></a></li>
+                <li><a href="#"><div>-></div></a></li>
+            </ul>
         </main>
         <footer id="page-footer">
-            <h1>Contacto</h1>
+            <h1 id="footer-title">Contacto</h1>
             <ul id="contact-list">
-                <li><a href="#"><img id="facebook" src="Contact/facebook.png" alt="Facebook"> Página de Facebook</a></li>
-                <li><a href="#"><img id="instagram" src="Contact/instagram.png" alt="Instagram"> Perfil de Instagram</a></li>
-                <li><img id="whatsapp" src="Contact/whatsapp.png" alt="Whatsapp"> +54 11 9 9999-9999</li>
+                <li><a href="#"><img id="facebook" src="src/Contact/facebook.png" alt="Facebook"> Página de Facebook</a></li>
+                <li><a href="#"><img id="instagram" src="src/Contact/instagram.png" alt="Instagram"> Perfil de Instagram</a></li>
+                <li><img id="whatsapp" src="src/Contact/whatsapp.png" alt="Whatsapp"> +54 11 9 9999-9999</li>
             </ul>
             <form id="contact-form">
                 <input id="email" type="email" name="email" placeholder="Email" required>
