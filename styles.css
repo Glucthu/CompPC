@@ -134,14 +134,20 @@ main{
 
 .featured-item{
     color: var(--col1);
-    border: var(--col7) 3px solid;
-    border-radius: 3%;
+    border: var(--col7) 2px solid;
     width: 150px;
-    height: 80%;
+    height: 85%;
     margin: 5px;
     padding: 10px 20px;
     background-color: var(--col9);
     text-decoration: none;
+}
+
+.featured-item img{
+    position: relative;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #products{
