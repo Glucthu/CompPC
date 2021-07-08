@@ -1,0 +1,43 @@
+#page-footer{
+    display: grid;
+    color: var(--col9);
+    background-color: var(--col2);
+}
+
+#footer-title{
+    margin-left: 20px;
+}
+
+#contact-list li{
+    list-style-type: none;
+}
+
+#contact-list li a{
+    color: var(--col6);
+    text-decoration: none;
+}
+
+#facebook, #instagram, #whatsapp{
+    width: 20px;
+}
+
+#contact-form{
+    margin: 0 0 20px 5px;
+}
+
+#contact-form input{
+    color: var(--col9);
+    background-color: var(--col5);
+    border: var(--col8) 2px solid;
+    outline: none;
+    min-height: 20px;
+    max-height: 50px;
+}
+
+#contact-form input[type=submit]{
+    cursor: pointer;
+}
+
+#contact-form ::placeholder{
+    color: var(--col7);
+}
