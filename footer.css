@@ -22,7 +22,7 @@
     width: 20px;
 }
 
-#contact-form input{
+#register-form input{
     color: var(--col9);
     background-color: var(--col5);
     border: var(--col8) 2px solid;
@@ -31,11 +31,11 @@
     max-height: 50px;
 }
 
-#contact-form input[type=submit]{
+#register-form input[type=submit]{
     cursor: pointer;
 }
 
-#contact-form ::placeholder{
+#register-form ::placeholder{
     color: var(--col7);
 }
 
