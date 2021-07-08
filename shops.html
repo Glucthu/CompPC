@@ -6,7 +6,11 @@
         <meta name="description" content="Components for PC page">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CompPC</title>
+        <link rel="stylesheet" href="src/webfont-iosevka-7.2.6/iosevka.css">
+        <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="media.css">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-201055266-1"></script>
         <script>
@@ -20,28 +24,27 @@
     <body>
         <header>
             <nav id="nav-bar">
-                <a id="logo" href="index.html"><img src="Logo.png"></a>
-                <ul id="nav-buttons">
-                    <li><a id="shops" href="shops.html"><img src="Nav buttons/pin.png">Tiendas</a></li>
-                    <li><a id="cart" href="cart.html"><img src="Nav buttons/shopping-cart.png">Carrito</a></li>
-                    <li><a id="about" href="about.html"><img src="Nav buttons/help-button.png">Acerca de</a></li>
-                </ul>
+                <a id="logo" href="index.html"><img src="src/Logo.png"></a>
                 <form id="search-bar">
-                    <input type="search" id="search" name="search" placeholder="Buscar">
+                    <input type="search" name="search" placeholder="Buscar">
                     <input type="submit" name="search" value="Aceptar">
                 </form>
+                <ul id="nav-buttons">
+                    <li><a id="shops" href="shops.html"><img src="src/Nav buttons/pin.png">Tiendas</a></li>
+                    <li><a id="cart" href="cart.html"><img src="src/Nav buttons/shopping-cart.png">Carrito</a></li>
+                    <li><a id="about" href="about.html"><img src="src/Nav buttons/help-button.png">Acerca de</a></li>
+                </ul>
             </nav>
         </header>
         <main>
-            <h1 id="title">Proximamente...</h1>
-            
+            Proximamente...
         </main>
-        <footer>
-            <h1>Contacto</h1>
+        <footer id="page-footer">
+            <h1 id="footer-title">Contacto</h1>
             <ul id="contact-list">
-                <li><a href="#"><img id="facebook" src="Contact/facebook.png" alt="Facebook"> Página de Facebook</a></li>
-                <li><a href="#"><img id="instagram" src="Contact/instagram.png" alt="Instagram"> Perfil de Instagram</a></li>
-                <li><img id="whatsapp" src="Contact/whatsapp.png" alt="Whatsapp"> +54 11 9 9999-9999</li>
+                <li><a href="#"><img id="facebook" src="src/Contact/facebook.png" alt="Facebook: "> Página de Facebook</a></li>
+                <li><a href="#"><img id="instagram" src="src/Contact/instagram.png" alt="Instagram: "> Perfil de Instagram</a></li>
+                <li><img id="whatsapp" src="src/Contact/whatsapp.png" alt="Whatsapp: "> +54 11 9 9999-9999</li>
             </ul>
             <form id="contact-form">
                 <input id="email" type="email" name="email" placeholder="Email" required>

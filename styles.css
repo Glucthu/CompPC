@@ -27,6 +27,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 150px 0 0 0;
 }
 
 #featured{
@@ -39,7 +40,6 @@ main{
     height: 300px;
     overflow: auto;
     overflow-y: hidden;
-    margin: 150px 0 0 0;
 }
 
 .featured-item{
