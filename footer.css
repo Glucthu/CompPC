@@ -2,10 +2,11 @@
     display: grid;
     color: var(--col9);
     background-color: var(--col2);
+    padding: 20px;
 }
 
-#footer-title{
-    margin-left: 20px;
+#contact-list{
+    padding: 0;
 }
 
 #contact-list li{
@@ -19,10 +20,6 @@
 
 #facebook, #instagram, #whatsapp{
     width: 20px;
-}
-
-#contact-form{
-    margin: 0 0 20px 5px;
 }
 
 #contact-form input{
@@ -40,4 +37,15 @@
 
 #contact-form ::placeholder{
     color: var(--col7);
+}
+
+#info{
+    text-align: right;
+    color: rgb(75, 75, 75);
+    cursor: context-menu;
+}
+
+#info a{
+    color: rgb(75, 75, 75);
+    text-decoration: none;
 }
