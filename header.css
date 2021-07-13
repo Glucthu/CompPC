@@ -36,7 +36,7 @@
     height: 3vh;
     min-height: 20px;
     max-height: 30px;
-    min-width: 100px;
+    min-width: 150px;
     text-align: center;
     border-top: var(--col1) 2px solid;
     border-right: var(--col1) 1px solid;
