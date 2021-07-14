@@ -17,8 +17,8 @@ html, body{
 
 body{
     font-family: Iosevka;
-    background-color: var(--col1);
-    color: var(--col9);
+    background-color: var(--col9);
+    color: var(--col1);
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
@@ -32,25 +32,26 @@ main{
 
 #featured{
     background-color: var(--col6);
-    width: 100vw;
+    border: var(--col2) 3px solid;
+    border-radius: 5px;
+    width: 95vw;
     height: 300px;
 }
 
 #featured-items{
-    margin-top: 3px;
     position: relative;
     display: flex;
     align-items: center;
     overflow: hidden;
     animation: 10s slider infinite;
 }
-
+/*
 @keyframes slider {
     33%{ left:-260px; }
     66%{ left:-520px; }
     100%{ left: 0; }
 }
-
+*/
 .featured-item{
     color: var(--col1);
     border: var(--col2) 2px solid;
@@ -84,7 +85,7 @@ main{
 
 #products{
     display: grid;
-    background-color: var(--col2);
+    background-color: var(--col8);
     grid-template-columns: repeat(3, 200px);
     grid-row-gap: 10px;
     justify-content: center;
@@ -98,7 +99,7 @@ main{
 .item{
     background-color: var(--col7);
     color: var(--col1);
-    border: var(--col9) 3px solid;
+    border: var(--col4) 3px solid;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -124,13 +125,14 @@ main{
 .item-title{
     margin: 0;
     text-align: center;
+    width: 100%;
 }
 
 .item header{
     background-color: var(--col2);
     color: var(--col8);
     border-radius: 2px 2px 0 0;
-    padding: 2px;
+    padding: 0;
 }
 
 .item article{
@@ -163,14 +165,14 @@ main{
 }
 
 #pagination li{
-    background-color: var(--col3);
+    background-color: var(--col4);
     text-align: center;
     width: 20px;
     display: inline-block;
     list-style-type: none;
 }
 
-#actual-page{ background-color: var(--col5) !important; }
+#actual-page{ background-color: var(--col6) !important; }
 
 #pagination a{
     text-decoration: none;

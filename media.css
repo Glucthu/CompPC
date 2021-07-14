@@ -48,3 +48,19 @@
         font-size: 0.75em;
     }
 }
+
+@media (min-width: 2200px) {
+    #nav-bar{
+        max-width: 5000px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: var(--col2) 3px solid;
+        border-right: var(--col2) 3px solid;
+        border-radius: 0 0 25px 25px;
+        justify-content: space-between;
+    }
+
+    #featured{
+        max-width: 4000px;
+    }
+}

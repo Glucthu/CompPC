@@ -33,6 +33,7 @@
 
 #register-form input[type=submit]{
     cursor: pointer;
+    height: 100%;
 }
 
 #register-form ::placeholder{
