@@ -44,7 +44,8 @@ main{
     position: relative;
     display: flex;
     align-items: center;
-    overflow: hidden;
+    overflow: scroll;
+    overflow-y: hidden;
     animation: 10s slider infinite;
 }
 /*
