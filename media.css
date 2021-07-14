@@ -30,6 +30,17 @@
         margin: 2px auto;
     }
 
+    main{
+        grid-template-rows: repeat(5, auto);
+    }
+
+    #featured{
+        width: 100vw;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+    }
+
     @keyframes expand{
         100%{
             transform: scale(1);
@@ -37,7 +48,16 @@
     }
 
     #products{
+        grid-area: 2/1/2/4;
         grid-template-columns: repeat(auto-fit, 200px);
+    }
+
+    #pagination{
+        grid-area: 3/1/3/4;
+    }
+
+    .advertising{
+        display: none;
     }
 
     .item h3{
@@ -62,5 +82,9 @@
 
     #featured{
         max-width: 4000px;
+    }
+
+    .advertising{
+        width: 10vw;
     }
 }

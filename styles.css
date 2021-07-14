@@ -25,8 +25,8 @@ body{
 
 main{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
     margin: 150px 0 0 0;
     justify-content: center;
 }
@@ -85,6 +85,20 @@ main{
 #featured-item2:checked ~ #featured-items { left:-260px; }
 #featured-item3:checked ~ #featured-items { left:-520px; }
 
+.advertising{
+    background-color: white;
+    border: var(--col1) 4px solid;
+    width: 15vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+.advertising img{
+    width: 100%;
+}
+
 #products{
     grid-area: 2/2/2/2;
     display: grid;
@@ -97,6 +111,9 @@ main{
     width: 100vw;
     max-width: 700px;
     padding: 10px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .item{
@@ -163,7 +180,7 @@ main{
 
 #pagination{
     padding: 0;
-    margin: 0 auto 150px auto;
+    margin: 0 auto 50px auto;
     cursor: context-menu;
     grid-area: 3/3/3/2;
     width: fit-content;
