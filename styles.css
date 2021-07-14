@@ -16,7 +16,7 @@ html, body{
 }
 
 body{
-    font-family: 'Iosevka Web';
+    font-family: Iosevka;
     background-color: var(--col9);
     color: var(--col1);
     display: grid;
