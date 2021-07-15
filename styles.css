@@ -24,9 +24,9 @@ body{
 }
 
 main{
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     margin: 150px 0 0 0;
     justify-content: center;
 }
@@ -38,23 +38,12 @@ main{
     border-radius: 5px;
     width: 95vw;
     height: 300px;
-}
-
-#featured-items{
-    position: relative;
     display: flex;
     align-items: center;
     overflow: scroll;
     overflow-y: hidden;
-    animation: 10s slider infinite;
 }
-/*
-@keyframes slider {
-    33%{ left:-260px; }
-    66%{ left:-520px; }
-    100%{ left: 0; }
-}
-*/
+
 .featured-item{
     color: var(--col1);
     border: var(--col2) 2px solid;
@@ -63,7 +52,7 @@ main{
     min-width: 250px;
     background-color: var(--col9);
     text-decoration: none;
-    margin: 0 3px;
+    margin: 0 5px;
 }
 
 .featured-item img{
@@ -74,17 +63,20 @@ main{
     transform: translateY(-50%) translateX(-50%);
 }
 
-#featured-pagination{
-    margin: 0 auto;
-    border-radius: 5px;
-    cursor: context-menu;
+#slider{
+    margin: 20px 0;
+    grid-area: 2/1/2/4;
+    background-color: black;
 }
 
-#featured-pagination input{ cursor: pointer; }
+.item img{
+    height: 500px !important;
+    margin: auto auto;
+}
 
-#featured-item1:checked ~ #featured-items { left:0; }
-#featured-item2:checked ~ #featured-items { left:-260px; }
-#featured-item3:checked ~ #featured-items { left:-520px; }
+.carousel-caption{
+    display: none;
+}
 
 .advertising{
     background-color: white;
@@ -93,7 +85,7 @@ main{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .advertising img{
@@ -101,7 +93,7 @@ main{
 }
 
 #products{
-    grid-area: 2/2/2/2;
+    grid-area: 3/2/3/2;
     display: grid;
     background-color: var(--col8);
     grid-template-columns: repeat(3, 200px);
@@ -117,7 +109,7 @@ main{
     transform: translateX(-50%);
 }
 
-.item{
+.product{
     background-color: var(--col7);
     color: var(--col1);
     border: var(--col4) 3px solid;
@@ -130,11 +122,12 @@ main{
     text-decoration: none;
 }
 
-.item:hover{
+.product:hover{
     animation-name: expand;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
     border: var(--col6) 3px solid;
+    text-decoration: none;
 }
 
 @keyframes expand{
@@ -143,36 +136,36 @@ main{
     100%{ transform: scale(1.1); }
 }
 
-.item-title{
+.product-title{
     margin: 0;
     text-align: center;
     width: 100%;
 }
 
-.item header{
+.product header{
     background-color: var(--col2);
     color: var(--col8);
     border-radius: 2px 2px 0 0;
     padding: 0;
 }
 
-.item article{
+.product article{
     margin: 10px 10px 0 10px;
 }
 
-.item footer{
+.product footer{
     background-color: var(--col1);
     color: var(--col7);
     border-radius: 0 0 2px 2px;
 }
 
-.item footer p{
+.product footer p{
     font-size: 1.25em;
     text-align: center;
     margin: 0;
 }
 
-.item img{
+.product img{
     position: relative;
     width: 100%;
     top: 50%;
@@ -183,7 +176,7 @@ main{
     padding: 0;
     margin: 0 auto 50px auto;
     cursor: context-menu;
-    grid-area: 3/3/3/2;
+    grid-area: 4/3/4/2;
     width: fit-content;
 }
 
