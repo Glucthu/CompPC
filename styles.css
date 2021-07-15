@@ -24,11 +24,16 @@ body{
 }
 
 main{
+    min-height: 100vh;
     display: grid !important;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(4, auto);
     margin: 150px 0 0 0;
     justify-content: center;
+}
+
+#comming-soon{
+    grid-area: 2/2/2/2;
 }
 
 #featured{
