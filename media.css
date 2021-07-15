@@ -6,15 +6,13 @@
         justify-content: center;
     }
 
-    #nav-buttons li a, #search-bar input{
-        font-size: 0.9em;
-    }
-
     #logo{
         position: relative;
-        display:-webkit-box;
-        -webkit-box-align:center;
-        -webkit-box-pack:center;
+        display: block;
+    }
+
+    #nav-buttons li a, #search-bar input{
+        font-size: 0.9em;
     }
     
     #nav-buttons{
@@ -28,6 +26,7 @@
     #search-bar input{
         display: block;
         margin: 2px auto;
+        margin: 20px 0;
     }
 
     main{
