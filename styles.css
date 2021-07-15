@@ -24,7 +24,6 @@ body{
 }
 
 main{
-    min-height: 100vh;
     display: grid !important;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(4, auto);
@@ -115,7 +114,7 @@ main{
 }
 
 .product{
-    background-color: var(--col7);
+    background-color: var(--col8);
     color: var(--col1);
     border: var(--col4) 3px solid;
     display: flex;
