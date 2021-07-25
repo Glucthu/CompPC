@@ -1,4 +1,11 @@
 @media (max-width: 800px) {
+    h1 { font-size: 26px !important; }
+    h2 { font-size: 24px !important; }
+    h3 { font-size: 22px !important; }
+    h4 { font-size: 20px !important; }
+    h5 { font-size: 18px !important; }
+    h6 { font-size: 16px !important; }
+    
     #nav-bar{
         position: absolute;
         top: 0;
@@ -11,50 +18,23 @@
         display: block;
     }
 
-    #nav-buttons li a, #search-bar input{
+    a{
         font-size: 0.9em;
-    }
-    
-    #nav-buttons{
-        position: relative;
-        justify-content: space-evenly;
-        align-content: space-evenly;
-        align-items: space-between;
-        width: 100vw;
-    }
-
-    #search-bar input{
-        display: block;
-        margin: 2px auto;
-        margin: 20px 0;
-    }
-
-    main{
-        grid-template-rows: repeat(6, auto);
-    }
-
-    #featured{
-        width: 100vw;
-        border-left: 0;
-        border-right: 0;
-        border-radius: 0;
     }
 
     #slider{
-        grid-area: 2/1/2/4;
+        grid-area: 1/1/1/4;
+        height: 50vw;
     }
 
     .item img{
-        height: 200px !important;
+        width: 100vw !important;
+        height: 50vw !important;
         margin: auto auto;
     }
 
-    #pagination{
-        grid-area: 4/1/4/4;
-    }
-
     #products{
-        grid-area: 3/1/3/4;
+        grid-area: 2/1/2/4;
         grid-template-columns: repeat(auto-fit, 200px);
     }
 
@@ -70,10 +50,6 @@
     .product p{
         font-size: 0.75em;
     }
-
-    .advertising{
-        display: none;
-    }
 }
 
 @media (min-width: 2200px) {
@@ -84,14 +60,6 @@
         border-left: var(--col2) 3px solid;
         border-right: var(--col2) 3px solid;
         border-radius: 0 0 25px 25px;
-        justify-content: space-between;
-    }
-
-    #featured{
-        max-width: 4000px;
-    }
-
-    .advertising{
-        width: 10vw;
+        justify-content: space-evenly;
     }
 }

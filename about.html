@@ -7,11 +7,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CompPC</title>
         <link rel="icon" href="src/icon.png">
-        <link rel="stylesheet" href="src/webfont-iosevka-7.2.6/iosevka.css">
+        <link rel="stylesheet" href="fonts.css">
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="footer.css">
         <link rel="stylesheet" href="media.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-201055266-1"></script>
         <script>
@@ -26,15 +29,7 @@
         <header>
             <nav id="nav-bar">
                 <a id="logo" href="index.html"><img src="src/Logo.png"></a>
-                <form id="search-bar">
-                    <input type="search" name="search" placeholder="Buscar">
-                    <input type="submit" name="search" value="Aceptar">
-                </form>
-                <ul id="nav-buttons">
-                    <li><a id="shops" href="shops.html"><img src="src/Nav buttons/pin.png">Tiendas</a></li>
-                    <li><a id="cart" href="cart.html"><img src="src/Nav buttons/shopping-cart.png">Carrito</a></li>
-                    <li><a id="about" href="about.html"><img src="src/Nav buttons/help-button.png">Acerca de</a></li>
-                </ul>
+                <a id="about" href="about.html"><img src="src/Nav buttons/help-button.png">Acerca de</a>
             </nav>
         </header>
         <main>
@@ -47,6 +42,11 @@
                 <li><a href="#"><img id="instagram" src="src/Contact/instagram.png" alt="Instagram: "> Perfil de Instagram</a></li>
                 <li><img id="whatsapp" src="src/Contact/whatsapp.png" alt="Whatsapp: "> +54 11 9 9999-9999</li>
             </ul>
+            <form id="register-form">
+                <input id="email" type="email" name="email" placeholder="Email" required>
+                <input type="submit" name="email" value="Registrarse">
+            </form>
+            <br>
             <div id="info">
                 <p>&copy;2021</p>
                 <a href="privacy policy.html">privacy policy</a> | <a href="Terms of use.html">terms of use</a>
