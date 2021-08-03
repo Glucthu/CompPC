@@ -52,7 +52,7 @@ main{
 
 #sub-title{
     font-size: 50px !important;
-    grid-area: 2/1/2/4 ;
+    grid-area: 2/1/2/4;
 }
 
 #title, #sub-title{

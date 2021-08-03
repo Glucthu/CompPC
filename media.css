@@ -19,12 +19,29 @@
         display: none;
     }
 
+    #menu, #menu-img{
+        display: none;
+    }
+
+    navbar{
+        display: unset;
+    }
+
+    navbar a{
+        color: var(--col9);
+    }
+
     a{
         font-size: 0.9em;
     }
 
+    #title, #sub-title{
+        height: 100%;
+        background-color: var(--col1);
+    }
+    
     #slider{
-        grid-area: 1/1/1/4;
+        grid-area: 3/1/3/4;
         height: 50vw;
     }
 
@@ -35,7 +52,7 @@
     }
 
     #products{
-        grid-area: 2/1/2/4;
+        grid-area: 4/1/4/4;
         grid-template-columns: repeat(auto-fit, 200px);
     }
 

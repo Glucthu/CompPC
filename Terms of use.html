@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="footer.css">
         <link rel="stylesheet" href="media.css">
         <link rel="stylesheet" href="terms and policy.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-201055266-1"></script>
         <script>
@@ -27,15 +30,16 @@
         <header>
             <nav id="nav-bar">
                 <a id="logo" href="index.html"><img src="src/Logo.png"></a>
-                <form id="search-bar">
-                    <input type="search" name="search" placeholder="Buscar">
-                    <input type="submit" name="search" value="Aceptar">
-                </form>
                 <ul id="nav-buttons">
-                    <li><a id="shops" href="shops.html"><img src="src/Nav buttons/pin.png">Tiendas</a></li>
-                    <li><a id="cart" href="cart.html"><img src="src/Nav buttons/shopping-cart.png">Carrito</a></li>
-                    <li><a id="about" href="about.html"><img src="src/Nav buttons/help-button.png">Acerca de</a></li>
+                    <li><a id="about" href="about.html"><img src="src/Nav buttons/information.svg">Acerca de</a></li>
                 </ul>
+                <input type="checkbox" name="menu" id="menu">
+                <img id="menu-img" src="src/Nav buttons/menu.svg">
+                <navbar>
+                    <a id="inicio" href="#">Inicio</a>
+                    <a id="establecimientos" href="#">Establecimientos</a>
+                    <a id="contacto" href="#">Contacto</a>
+                </navbar>
             </nav>
         </header>
         <main>
@@ -125,17 +129,18 @@
         <footer id="page-footer">
             <h1 id="footer-title">Contacto</h1>
             <ul id="contact-list">
-                <li><a href="#"><img id="facebook" src="src/Contact/facebook.png" alt="Facebook: "> Página de Facebook</a></li>
-                <li><a href="#"><img id="instagram" src="src/Contact/instagram.png" alt="Instagram: "> Perfil de Instagram</a></li>
-                <li><img id="whatsapp" src="src/Contact/whatsapp.png" alt="Whatsapp: "> +54 11 9 9999-9999</li>
+                <li><a href="#"><img id="facebook" src="src/Contact/facebook-light.svg" alt="Facebook: "> Página de Facebook</a></li>
+                <li><a href="#"><img id="instagram" src="src/Contact/instagram-light.svg" alt="Instagram: "> Perfil de Instagram</a></li>
+                <li><img id="whatsapp" src="src/Contact/whatsapp-light.svg" alt="Whatsapp: "> +54 11 9 9999-9999</li>
             </ul>
             <form id="register-form">
                 <input id="email" type="email" name="email" placeholder="Email" required>
                 <input type="submit" name="email" value="Registrarse">
             </form>
+            <br>
             <div id="info">
                 <p>&copy;2021</p>
-                <a href="privacy policy.html">privacy policy</a> | <a href="#">terms of use</a>
+                <a href="privacy policy.html">privacy policy</a> | <a href="Terms of use.html">terms of use</a>
             </div>
         </footer>
     </body>

@@ -73,8 +73,8 @@ navbar{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 30px);
-    top: 3vw;
-    right: 0vw;
+    top: 7vh;
+    right: 0;
     background-color: var(--col8);
     width: auto;
     height: auto;
