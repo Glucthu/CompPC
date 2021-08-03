@@ -78,6 +78,19 @@ navbar{
     background-color: var(--col8);
     width: auto;
     height: auto;
+    animation-name: fading;
+    animation-fill-mode: forwards;
+    animation-duration: 0.7s;
+}
+
+@keyframes fading {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 #about img, #menu-img{
