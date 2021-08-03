@@ -29,7 +29,6 @@ body{
 
 main{
     width: 100vw;
-    display: grid !important;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(4, auto);
     margin: 200px 0 0 0;
@@ -38,21 +37,25 @@ main{
 
 #background{
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
     z-index: -1;
     width: 100vw;
     filter: brightness(20%);
+    
+}
+
+#comming-soon{
+    text-align: center;
 }
 
 #title{
     font-size: 60px !important;
-    grid-area: 1/1/1/4;
 }
 
 #sub-title{
     font-size: 50px !important;
-    grid-area: 2/1/2/4;
 }
 
 #title, #sub-title{
@@ -60,16 +63,12 @@ main{
     color: var(--col8);
 }
 
-#comming-soon{
-    grid-area: 1/2/1/2;
-}
-
 #slider{
     margin-top: 90vh;
-    margin-right: 0px;
+    margin-right: auto;
     margin-bottom: 20px;
-    margin-left: 0px;
-    grid-area: 3/1/3/4;
+    margin-left: auto;
+    width: fit-content;
     background-color: black;
     height: 500px;
 }
@@ -81,7 +80,6 @@ main{
 }
 
 #products{
-    grid-area: 4/2/4/2;
     display: grid;
     background-color: var(--col8);
     grid-template-columns: repeat(3, 200px);
@@ -90,7 +88,6 @@ main{
     justify-items: center;
     margin: 100px 0;
     width: 100vw;
-    max-width: 700px;
     padding: 10px 0;
 }
 

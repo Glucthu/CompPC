@@ -1,6 +1,5 @@
 main{
     width: 80vw;
-    display: block !important;
     position: relative;
     left: 50%;
     transform: translateX(-50%);

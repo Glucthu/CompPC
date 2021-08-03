@@ -4,6 +4,7 @@
     color: var(--col9);
     background-color: var(--col2);
     padding: 20px;
+    width: 100vw;
 }
 
 #contact-list{
