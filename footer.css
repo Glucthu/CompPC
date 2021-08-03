@@ -1,11 +1,13 @@
 #page-footer{
     display: grid;
+    grid-template-columns: repeat(3, auto);
     color: var(--col9);
     background-color: var(--col2);
     padding: 20px;
 }
 
 #contact-list{
+    grid-area: 2/2/2/2;
     padding: 0;
 }
 
@@ -22,18 +24,20 @@
     width: 20px;
 }
 
+#register-form{
+    grid-area: 3/2/3/2;
+}
+
 #register-form input{
     color: var(--col9);
     background-color: var(--col5);
     border: var(--col8) 2px solid;
     outline: none;
-    min-height: 20px;
-    max-height: 50px;
+    height: 30px;
 }
 
 #register-form input[type=submit]{
     cursor: pointer;
-    height: 100%;
 }
 
 #register-form ::placeholder{
@@ -41,6 +45,7 @@
 }
 
 #info{
+    grid-area: 3/3/3/3;
     text-align: right;
     color: rgb(75, 75, 75);
     cursor: context-menu;

@@ -16,51 +16,11 @@
     max-height: 100px;
     min-height: 40px;
     margin: 0;
+    background-color: var(--col6);
 }
 
 #search-bar{
     display: flex;
-}
-
-#search-bar input{
-    color: var(--col9);
-    background-color: var(--col2);
-    outline: none;
-    min-width: 200px;
-    min-height: 20px;
-    max-height: 30px;
-}
-
-#search-bar input[type=search]{
-    width: 25vw;
-    min-height: 20px;
-    max-height: 30px;
-    min-width: 150px;
-    text-align: center;
-    border-top: var(--col1) 2px solid;
-    border-right: var(--col1) 1px solid;
-    border-bottom: var(--col1) 2px solid;
-    border-left: var(--col1) 2px solid;
-    border-radius: 15px 0 0 15px;
-}
-
-#search-bar ::placeholder{
-    color: var(--col9);
-}
-
-#search-bar input[type=submit]{
-    width: 10vw;
-    min-width: 75px;
-    max-width: 200px;
-    border-top: var(--col1) 2px solid;
-    border-right: var(--col1) 2px solid;
-    border-bottom: var(--col1) 2px solid;
-    border-left: var(--col1) 1px solid;
-    border-radius: 0 15px 15px 0;
-}
-
-#search-bar input[type=submit]:hover{
-    cursor: pointer;
 }
 
 #nav-buttons{
@@ -84,8 +44,8 @@
     text-decoration: underline;
 }
 
-#shops img, #cart img, #about img{
-    height: 1vh;
+ #about img{
+    height: 1rem;
     min-height: 20px;
     margin: 0;
 }
