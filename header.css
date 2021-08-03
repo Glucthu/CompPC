@@ -44,7 +44,43 @@
     text-decoration: underline;
 }
 
- #about img{
+#menu{
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+    transform: scale(2.1);
+}
+
+#menu, #menu-img{
+    position: absolute;
+    right: 40px;
+}
+
+navbar{
+    display: none;
+}
+
+#menu:checked ~ navbar a, #menu:checked ~ navbar{
+    display: block;
+    width: auto;
+    margin: 0;
+    text-align: center;
+    color: var(--col2);
+}
+
+#menu:checked ~ navbar{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 30px);
+    top: 3vw;
+    right: 0vw;
+    background-color: var(--col8);
+    width: auto;
+    height: auto;
+}
+
+#about img, #menu-img{
     height: 1rem;
     min-height: 20px;
     margin: 0;
