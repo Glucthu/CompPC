@@ -71,6 +71,10 @@
     .product p{
         font-size: 0.75em;
     }
+
+    #page-footer{
+        display: block;
+    }
 }
 
 @media (min-width: 2200px) {
