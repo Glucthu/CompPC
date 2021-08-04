@@ -66,13 +66,16 @@
         font-size: 0.9em;
     }
 
+    #background{
+        top: 150px;
+    }
+
     #title, #sub-title{
         margin: 0;
     }
 
-    #sub-title{
-        line-height: 100px;
-    }
+    #title{ font-size: 40px !important; }
+    #sub-title{ font-size: 35px !important; }
 
     #slider{
         margin-top: 200px;
