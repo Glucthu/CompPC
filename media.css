@@ -67,7 +67,6 @@
     }
 
     #title, #sub-title{
-        background-color: var(--col1);
         margin: 0;
     }
 
