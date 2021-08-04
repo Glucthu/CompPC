@@ -78,13 +78,6 @@
 
     #slider{
         margin-top: 300px;
-        height: 50vw;
-    }
-
-    .item img{
-        width: 100vw !important;
-        height: 50vw !important;
-        margin: auto auto;
     }
 
     #products{

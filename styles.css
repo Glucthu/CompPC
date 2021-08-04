@@ -64,15 +64,13 @@ main{
     margin-right: auto;
     margin-bottom: 20px;
     margin-left: auto;
-    width: fit-content;
     background-color: black;
     height: 500px;
 }
 
-.item img{
-    height: 500px !important;
-    width: 1000px !important;
-    margin: auto auto;
+.item img, #slider{
+    height: 35vw !important;
+    width: 80vw !important;
 }
 
 #products{
