@@ -54,6 +54,7 @@ main{
 #sub-title{ font-size: 50px !important; }
 
 #title, #sub-title{
+    font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     color: var(--col8);
 }
