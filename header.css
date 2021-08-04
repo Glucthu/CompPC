@@ -30,10 +30,11 @@ navbar a{
     border: var(--col1) solid 1px;
     border-radius: 5px;
     color: var(--col9);
+    background-color: var(--col6);
     font-size: 1.25em;
 }
 
-navbar a:hover{
+navbar a:hover, navbar a:focus{
     text-decoration: underline;
     color: var(--col9);
 }

@@ -59,7 +59,6 @@
         animation-name: fading;
         animation-fill-mode: forwards;
         animation-duration: 0.6s;
-        height: 75vh;
     }
 
     a{
