@@ -60,16 +60,15 @@ main{
 }
 
 #slider{
-    margin-top: 90vh;
+    margin-top: 50vh;
     margin-right: auto;
     margin-bottom: 20px;
     margin-left: auto;
     background-color: black;
-    height: 500px;
 }
 
 .item img, #slider{
-    height: 35vw !important;
+    height: 40vw !important;
     width: 80vw !important;
 }
 
