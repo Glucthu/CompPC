@@ -15,20 +15,51 @@
         display: block;
     }
 
-    #background{
-        display: none;
+    #menu{
+        z-index: 1;
+        opacity: 0;
+        cursor: pointer;
+        transform: scale(2);
     }
-
+    
     #menu, #menu-img{
-        display: none;
-    }
-
-    navbar{
         display: unset;
     }
 
-    navbar a{
+    #menu-img, #menu-close-img{
+        position: relative;
+        bottom: 15px;
+    }
+
+    navbar{
+        display: none;
+    }
+    
+    #menu:checked ~ navbar a, #menu:checked ~ navbar{
+        display: block;
+        width: auto;
+        margin: 5px;
+        text-align: center;
         color: var(--col9);
+    }
+
+    #menu:checked ~ #menu-close-img{
+        display: unset;
+    }
+
+    #menu:checked ~ #menu-img{
+        display: none;
+    }
+    
+    #menu:checked ~ navbar{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        animation-name: fading;
+        animation-fill-mode: forwards;
+        animation-duration: 0.6s;
+        height: 100vh;
     }
 
     a{

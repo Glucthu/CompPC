@@ -16,71 +16,26 @@
     max-height: 100px;
     min-height: 40px;
     margin: 0;
-    background-color: var(--col5);
 }
 
-#search-bar{
-    display: flex;
-}
-
-#nav-buttons{
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-#nav-buttons li{
-    list-style-type: none;
-}
-
-#nav-buttons li a{
-    margin: 0 5px;
-    color: var(--col9);
-    text-decoration: none;
-    font-size: 1.25em;
-}
-
-#nav-buttons li a:hover{
-    text-decoration: underline;
-}
-
-#menu{
-    z-index: 1;
-    opacity: 0;
-    cursor: pointer;
-    transform: scale(2.1);
-}
-
-#menu, #menu-img{
-    position: absolute;
-    right: 40px;
-}
-
-navbar{
+#menu, #menu-img, #menu-close-img{
     display: none;
 }
 
-#menu:checked ~ navbar a, #menu:checked ~ navbar{
-    display: block;
-    width: auto;
-    margin: 0;
-    text-align: center;
-    color: var(--col2);
+navbar{
+    display: unset;
 }
 
-#menu:checked ~ navbar{
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 30px);
-    top: 7vh;
-    right: 0;
-    background-color: var(--col8);
-    width: auto;
-    height: auto;
-    animation-name: fading;
-    animation-fill-mode: forwards;
-    animation-duration: 0.7s;
+navbar a{
+    border: var(--col1) solid 1px;
+    border-radius: 5px;
+    color: var(--col9);
+    font-size: 1.25em;
+}
+
+navbar a:hover{
+    text-decoration: underline;
+    color: var(--col9);
 }
 
 @keyframes fading {
@@ -93,7 +48,7 @@ navbar{
     }
 }
 
-#about img, #menu-img{
+#about img, #menu-img, #menu-close-img{
     height: 1rem;
     min-height: 20px;
     margin: 0;
