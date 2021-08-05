@@ -43,7 +43,7 @@ main{
     top: 0;
     z-index: -1;
     width: 100vw;
-    filter: brightness(20%);    
+    filter: brightness(30%);    
 }
 
 #comming-soon{ text-align: center; }
