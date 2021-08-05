@@ -32,6 +32,7 @@ navbar{
 }
 
 navbar a{
+    text-decoration: none;
     text-align: center;
     padding: 0 5px;
     border: var(--col5) solid 1px;
@@ -42,7 +43,9 @@ navbar a{
 }
 
 navbar a:hover, navbar a:focus{
-    text-decoration: underline;
+    text-decoration: none;
+    background-color: var(--col2);
+    border: var(--col6) solid 1px;
     color: var(--col9);
 }
 
