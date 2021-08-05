@@ -11,9 +11,7 @@
     padding: 0;
 }
 
-#contact-list li{
-    list-style-type: none;
-}
+#contact-list li{ list-style-type: none; }
 
 #contact-list li a{
     color: var(--col6);
@@ -24,9 +22,7 @@
     width: 20px;
 }
 
-#register-form{
-    grid-area: 3/2/3/2;
-}
+#register-form{ grid-area: 2/3/2/3; }
 
 #register-form input{
     color: var(--col9);
@@ -36,17 +32,13 @@
     height: 30px;
 }
 
-#register-form input[type=submit]{
-    cursor: pointer;
-}
+#register-form input[type=submit]{ cursor: pointer; }
 
-#register-form ::placeholder{
-    color: var(--col7);
-}
+#register-form ::placeholder{ color: var(--col7); }
 
 #info{
-    grid-area: 3/3/3/3;
-    text-align: right;
+    grid-area: 3/2/3/2;
+    text-align: center;
     color: rgb(75, 75, 75);
     cursor: context-menu;
 }

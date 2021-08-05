@@ -25,13 +25,14 @@ body{
     color: var(--col1);
     display: grid;
     grid-template-rows: auto 1fr auto;
+    overflow-x: hidden;
 }
 
 main{
     width: 100vw;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(4, auto);
-    margin: 150px 0 0 0;
+    margin: 6em 0 0 0;
     justify-content: center;
 }
 
@@ -43,12 +44,10 @@ main{
     z-index: -1;
     width: 100vw;
     filter: brightness(20%);
-    
+    min-width: 500px;
 }
 
-#comming-soon{
-    text-align: center;
-}
+#comming-soon{ text-align: center; }
 
 #title{ font-size: 60px !important; }
 #sub-title{ font-size: 50px !important; }

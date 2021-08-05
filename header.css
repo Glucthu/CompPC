@@ -1,5 +1,5 @@
 #nav-bar{
-    background-color: var(--col5);
+    background-color: var(--col2);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -12,10 +12,14 @@
 }
 
 #logo img{
-    height: 5vh;
-    max-height: 100px;
-    min-height: 40px;
-    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--col2);
+    height: 75px;
+    padding: 10px;
+    z-index: 2;
+    border-radius: 0 0 10px 0;
 }
 
 #menu, #menu-img, #menu-close-img{
@@ -27,10 +31,12 @@ navbar{
 }
 
 navbar a{
-    border: var(--col1) solid 1px;
-    border-radius: 5px;
+    text-align: center;
+    padding: 0 5px;
+    border: var(--col5) solid 1px;
+    border-radius: calc(1.25em/2);
     color: var(--col9);
-    background-color: var(--col6);
+    background-color: var(--col1);
     font-size: 1.25em;
 }
 

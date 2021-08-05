@@ -6,13 +6,12 @@
     #nav-bar{
         position: absolute;
         top: 0;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: flex-end;
     }
 
-    #logo{
-        position: relative;
-        display: block;
+    #logo img{
+        position: absolute;
     }
 
     #menu{
@@ -25,8 +24,9 @@
     #menu, #menu-img{ display: unset; }
 
     #menu-img, #menu-close-img{
+        top: 1px;
         position: relative;
-        bottom: 15px;
+        right: 15px;
     }
 
     navbar{ display: none; }
@@ -39,23 +39,28 @@
         color: var(--col9);
     }
 
-    #menu:checked ~ #menu-close-img{ display: unset; }
+    #menu:checked ~ #menu-close-img{
+        display: unset;
+        position: relative;
+        right: 15px;
+    }
 
     #menu:checked ~ #menu-img{ display: none; }
     
     #menu:checked ~ navbar{
         display: flex;
         flex-direction: column;
-        width: auto;
-        height: auto;
         animation-name: fading;
         animation-fill-mode: forwards;
         animation-duration: 0.6s;
+        position: absolute;
+        background-color: var(--col2);
+        top: 1.25em;
     }
 
     a{ font-size: 0.9em; }
 
-    #background{ top: 140px; }
+    #background{ top: 1.25em; }
 
     #title, #sub-title{ margin: 0; }
 
@@ -80,16 +85,4 @@
     .product p{ font-size: 0.75em; }
 
     #page-footer{ display: block; }
-}
-
-@media (min-width: 2200px) {
-    #nav-bar{
-        max-width: 5000px;
-        left: 50%;
-        transform: translateX(-50%);
-        border-left: var(--col2) 3px solid;
-        border-right: var(--col2) 3px solid;
-        border-radius: 0 0 25px 25px;
-        justify-content: space-evenly;
-    }
 }
