@@ -74,6 +74,43 @@ main{
     width: 80vw !important;
 }
 
+#register-form{ 
+    justify-content: center;
+    background-color: var(--col2);
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: fit-content;
+    padding: 5px;
+    border: var(--col6) 2px solid;
+    border-radius: 10px;
+}
+
+#register-form input{
+    color: var(--col9);
+    background-color: var(--col5);
+    border: var(--col8) 2px solid;
+    outline: none;
+    height: 30px;
+    opacity: 0.95;
+    margin: 10px 2px;
+    width: 300px;
+}
+
+#register-form input[type=submit]{ 
+    cursor: pointer; 
+    background-color: var(--col6);
+}
+
+#register-form ::placeholder{ color: var(--col7); }
+
+#name{ grid-area: 1/1; }
+#surname{ grid-area: 1/2; }
+#email{ grid-area: 2/1; }
+#phone{ grid-area: 3/1 }
+#captcha{ grid-area: 4/1;}
+#send{ grid-area: 5/1/5/3; }
+
 #products{
     display: grid;
     background-color: var(--col8);

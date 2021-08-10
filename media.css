@@ -66,6 +66,22 @@
     #sub-title{ font-size: 35px !important; }
 
     #slider{ margin-top: 300px; }
+    
+    #register-form{
+        background-color: var(--col2);
+        margin: 20px auto;
+    }
+
+    #register-form input{
+        width: 90vw;
+    }
+
+    #name{ grid-area: 1/1; }
+    #surname{ grid-area: 2/1; }
+    #email{ grid-area: 3/1; }
+    #phone{ grid-area: 4/1 }
+    #captcha{ grid-area: 5/1; }
+    #send{ grid-area: 6/1; }
 
     #products{
         grid-area: 4/1/4/4;
