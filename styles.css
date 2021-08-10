@@ -52,8 +52,8 @@ main{
     filter: brightness(30%);    
 }
 
-#title{ font-size: 60px !important; }
-#sub-title{ font-size: 50px !important; }
+#title{ font-size: 8vw !important; }
+#sub-title{ font-size: 6vw !important; }
 
 #title, #sub-title{
     font-family: 'Roboto Condensed', sans-serif;
