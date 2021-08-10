@@ -95,6 +95,7 @@ main{
     opacity: 0.95;
     margin: 10px 2px;
     width: 300px;
+    border-radius: 3px;
 }
 
 #register-form input[type=submit]{ 
