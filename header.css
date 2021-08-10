@@ -3,13 +3,14 @@
     opacity: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     z-index: 1;
     border-bottom: var(--col2) 3px solid;
+    height: 3em;
 }
 
 #logo img{

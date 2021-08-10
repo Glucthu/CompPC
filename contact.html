@@ -16,6 +16,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+        <script src="index.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -46,9 +47,9 @@
         <main>
             <form id="register-form">
                 <input id="email" type="email" name="email" placeholder="Email" required>
-                <input type="submit" name="email" value="Registrarse">
+                <div class="g-recaptcha" data-sitekey="6LfwtN4bAAAAAHH_xB-Uidv-XYrYm-43GmSa--oC"></div>
+                <input type="submit" value="Enviar" onClick="VerifyCaptcha()" id="send">
             </form>
-            <div class="g-recaptcha" data-sitekey="6LfwtN4bAAAAAHH_xB-Uidv-XYrYm-43GmSa--oC"></div>
         </main>
         <footer id="page-footer">
             <h1 id="footer-title">Contacto</h1>

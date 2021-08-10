@@ -5,3 +5,13 @@ function initMap() {
       center: uluru,
     });
 }
+
+function VerifyCaptcha(e){
+  var verification;
+  verification = grecaptcha.getResponse();
+  document.getElementById("send").addEventListener("click", function(event){});
+  if (verification == null || verification == "") {
+      event.preventDefault();
+      return false;
+  }
+}
