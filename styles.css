@@ -53,16 +53,20 @@ main{
 }
 
 #title{ font-size: 8vw !important; }
-#sub-title{ font-size: 6vw !important; }
+
+#sub-title{ 
+    font-size: 6vw !important; 
+    margin-bottom: 100vh;
+}
 
 #title, #sub-title{
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     color: var(--col8);
+    margin-top: 0;
 }
 
 #slider{
-    margin-top: 90vh;
     margin-right: auto;
     margin-bottom: 20px;
     margin-left: auto;
@@ -101,6 +105,8 @@ main{
 #register-form input[type=submit]{ 
     cursor: pointer; 
     background-color: var(--col6);
+    height: 4em;
+    width: 600px;
 }
 
 #register-form ::placeholder{ color: var(--col7); }
