@@ -12,6 +12,7 @@ function VerifyCaptcha(e){
   document.getElementById("send").addEventListener("click", function(event){});
   if (verification == null || verification == "") {
       event.preventDefault();
+      alert("Por favor, verifique el CAPTCHA");
       return false;
   }
 }
